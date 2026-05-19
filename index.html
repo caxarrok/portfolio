@@ -5,126 +5,94 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
 
-    <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-            name="description"
-            content="Головна сторінка портфоліо"
-    >
+    <meta name="description" content="Головна сторінка портфоліо">
 
-    <meta
-            name="author"
-            content="Твоє ім'я"
-    >
+    <meta name="author" content="Твоє ім'я">
 
-    <title>
-        Головна — Портфоліо
-    </title>
+    <title>Головна — Портфоліо</title>
 </head>
 
 <body>
 
-<header>
+<div class="page">
 
-    <h1>
-        Марія Оскорбіна
-    </h1>
+    <header class="header">
 
-    <nav>
+        <h1>Про мене</h1>
 
-        <ul>
+        <nav class="nav">
 
-            <li>
-                <a href="index.html">
-                    Головна
-                </a>
-            </li>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-            <li>
-                <a href="about.html">
-                    Про мене
-                </a>
-            </li>
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-            <li>
-                <a href="contacts.html">
-                    Контакти
-                </a>
-            </li>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="index.html">Головна</a></li>
+                <li><a class="nav-link" href="about.html">Про мене</a></li>
+                <li><a class="nav-link" href="contacts.html">Контакти</a></li>
+            </ul>
 
-        </ul>
+        </nav>
 
-    </nav>
+    </header>
 
-</header>
+    <main class="content">
 
-<main>
+        <section>
 
-    <section>
+            <h2>Вітаю на моєму сайті</h2>
 
-        <h2>
-            Вітаю на моєму сайті
-        </h2>
+            <p>
+                Я майбутній <strong>Frontend Developer</strong>.
+            </p>
 
-        <p>
-            Я майбутній
-            <strong>Frontend Developer</strong>.
-        </p>
+            <p>
+                Зараз я активно вивчаю <em>HTML та Git</em>.
+            </p>
 
-        <p>
-            Зараз я активно вивчаю
-            <em>HTML та Git</em>.
-        </p>
+            <blockquote>
+                "Ніколи не зупиняйся вчитись."
+            </blockquote>
 
-        <blockquote>
-            "Ніколи не зупиняйся вчитись."
-        </blockquote>
+        </section>
 
-    </section>
+        <section>
 
-    <section>
+            <h2>Мої цілі</h2>
 
-        <h2>
-            Мої цілі
-        </h2>
+            <ol>
+                <li>Вивчити HTML</li>
+                <li>Освоїти CSS</li>
+                <li>Стати Frontend Developer</li>
+            </ol>
 
-        <ol>
+        </section>
 
-            <li>
-                Вивчити HTML
-            </li>
+        <figure class="card">
+            <img src="images/photo.jpg" alt="Моє фото" width="300">
+            <figcaption>Моє хобі</figcaption>
+        </figure>
 
-            <li>
-                Освоїти CSS
-            </li>
+    </main>
 
-            <li>
-                Стати Frontend Developer
-            </li>
+    <aside class="sidebar">
+        <p>💡 Тут може бути додаткова інформація або навігація</p>
+    </aside>
 
-        </ol>
+    <footer class="footer">
+        <p>&copy; 2026 Марія Оскорбіна</p>
+    </footer>
 
-    </section>
+</div>
 
-    <figure>
-        <span class="image-badge">NEW</span>
-        <img src="images/photo.jpg" alt="Моє фото">
-        <figcaption>Моє фото</figcaption>
-    </figure>
-
-</main>
-
-<footer>
-
-    <p>
-        &copy; 2026 Марія Оскорбіна
-    </p>
-
-</footer>
 <a href="#" class="back-to-top">↑</a>
+
 </body>
 
 </html>

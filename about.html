@@ -3,268 +3,171 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
+
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="description" content="Інформація про мене">
+    <meta name="author" content="Марія Оскорбіна">
 
-    <meta
-            name="description"
-            content="Інформація про мене"
-    >
-
-    <meta
-            name="author"
-            content="Твоє ім'я"
-    >
-
-    <title>
-        Про мене — Портфоліо
-    </title>
+    <title>Про мене — Портфоліо</title>
 </head>
 
 <body>
 
-<header>
+<div class="page">
 
-    <h1>
-        Про мене
-    </h1>
+    <header class="header">
 
-    <nav>
+        <h1>Про мене</h1>
 
-        <ul>
+        <nav class="nav">
 
-            <li>
-                <a href="index.html">
-                    Головна
-                </a>
-            </li>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-            <li>
-                <a href="about.html">
-                    Про мене
-                </a>
-            </li>
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-            <li>
-                <a href="contacts.html">
-                    Контакти
-                </a>
-            </li>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="index.html">Головна</a></li>
+                <li><a class="nav-link" href="about.html">Про мене</a></li>
+                <li><a class="nav-link" href="contacts.html">Контакти</a></li>
+            </ul>
 
-        </ul>
+        </nav>
 
-    </nav>
+    </header>
 
-</header>
+    <main class="content">
 
-<main>
-    <div class="scroll-box">
-        <p>
-            Я вивчаю frontend-розробку та постійно вдосконалюю свої навички.
-            Мені подобається створювати сучасні вебсайти та працювати з HTML і CSS.
-            Також я цікавлюся UI/UX дизайном та адаптивною версткою.
-        </p>
-    </div>
+        <section class="section">
 
-    <section>
+            <h2>Про мене</h2>
 
-        <h2>
-            Освіта
-        </h2>
+            <div class="scroll-box">
+                <p>
+                    Я вивчаю frontend-розробку та постійно вдосконалюю свої навички.
+                    Мені подобається створювати сучасні вебсайти та працювати з HTML і CSS.
+                    Також я цікавлюся UI/UX дизайном та адаптивною версткою.
+                </p>
+            </div>
 
-        <p>
-            Я навчаюсь на спеціальності
-            "Комп'ютерні науки".
-        </p>
+        </section>
 
-    </section>
+        <section class="section">
 
-    <section>
+            <h2>Освіта</h2>
 
-        <h2>
-            Навички
-        </h2>
+            <p>Я навчаюсь на спеціальності "Інформаційні системи та технології".</p>
 
-        <table border="1">
+        </section>
 
-            <caption>
-                Мої технічні навички
-            </caption>
+        <section class="section">
 
-            <thead>
+            <h2>Навички</h2>
 
-            <tr>
+            <table class="table">
 
-                <th>
-                    Технологія
-                </th>
+                <caption>Мої технічні навички</caption>
 
-                <th>
-                    Рівень
-                </th>
+                <thead>
+                <tr>
+                    <th>Технологія</th>
+                    <th>Рівень</th>
+                    <th>Досвід</th>
+                </tr>
+                </thead>
 
-                <th>
-                    Досвід
-                </th>
+                <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Початківець</td>
+                    <td>1 місяць</td>
+                </tr>
 
-            </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Базовий</td>
+                    <td>2 тижні</td>
+                </tr>
 
-            </thead>
+                <tr>
+                    <td>Git</td>
+                    <td>Початківець</td>
+                    <td>2 тижні</td>
+                </tr>
+                </tbody>
 
-            <tbody>
+            </table>
 
-            <tr>
+        </section>
 
-                <td>
-                    HTML
-                </td>
+        <section class="section">
 
-                <td>
-                    Початківець
-                </td>
+            <h2>Цікаві факти</h2>
 
-                <td>
-                    1 місяць
-                </td>
+            <dl>
+                <dt>Хобі</dt>
+                <dd>Програмування та музика</dd>
 
-            </tr>
+                <dt>Улюблена технологія</dt>
+                <dd>HTML</dd>
+            </dl>
 
-            <tr>
+        </section>
 
-                <td>
-                    CSS
-                </td>
+        <section class="section">
 
-                <td>
-                    Базовий
-                </td>
+            <aside class="aside">
+                <h3>Додаткова інформація</h3>
+                <p>Люблю створювати прості вебсайти.</p>
+            </aside>
 
-                <td>
-                    2 тижні
-                </td>
+        </section>
 
-            </tr>
+        <section class="section">
 
-            <tr>
+            <figure class="card">
+                <img src="images/hobby.jpg" alt="Моє хобі">
+                <figcaption>Моє хобі</figcaption>
+            </figure>
 
-                <td>
-                    Git
-                </td>
+        </section>
 
-                <td>
-                    Початківець
-                </td>
+        <section class="section">
 
-                <td>
-                    2 тижні
-                </td>
+            <h2>Відео</h2>
 
-            </tr>
+            <figure class="card video-card">
 
-            </tbody>
+                <video controls width="400">
+                    <source src="video/intro.mp4" type="video/mp4">
+                    Ваш браузер не підтримує відео.
+                </video>
 
-        </table>
+                <figcaption>Моє відео</figcaption>
 
-    </section>
+            </figure>
 
-    <section>
+        </section>
 
-        <h2>
-            Цікаві факти
-        </h2>
+    </main>
 
-        <dl>
-
-            <dt>
-                Хобі
-            </dt>
-
-            <dd>
-                Програмування та музика
-            </dd>
-
-            <dt>
-                Улюблена технологія
-            </dt>
-
-            <dd>
-                HTML
-            </dd>
-
-        </dl>
-
-    </section>
-
-    <aside>
-
-        <h3>
-            Додаткова інформація
-        </h3>
-
-        <p>
-            Люблю створювати прості вебсайти.
-        </p>
-
+    <aside class="sidebar">
+        <p>Sidebar: додаткові блоки або навігація</p>
     </aside>
 
-    <figure>
+    <footer class="footer">
+        <p>&copy; 2026 Марія Оскорбіна</p>
+    </footer>
 
-        <img
-                src="images/hobby.jpg"
-                alt="Моє хобі"
-                width="300"
-        >
+    <a href="#" class="back-to-top">↑</a>
 
-        <figcaption>
-            Моє хобі
-        </figcaption>
+</div>
 
-    </figure>
-
-    <section>
-
-        <h2>
-            Відео
-        </h2>
-
-        <figure>
-
-            <video
-                    controls
-                    width="400"
-            >
-
-                <source
-                        src="video/intro.mp4"
-                        type="video/mp4"
-                >
-
-                Ваш браузер не підтримує відео.
-
-            </video>
-
-            <figcaption>
-                Моє відео
-            </figcaption>
-
-        </figure>
-
-    </section>
-
-</main>
-
-<footer>
-
-    <p>
-        &copy; 2026 Марія Оскорбіна
-    </p>
-
-</footer>
-<a href="#" class="back-to-top">↑</a>
 </body>
 
 </html>
